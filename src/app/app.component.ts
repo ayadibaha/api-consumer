@@ -31,6 +31,7 @@ export class AppComponent implements OnInit {
   }
   // Eliminer les doublons par un critère
   updateList(critere) {
+    console.log(critere);
     const request = {
       body: this.salaries,
       critere: critere

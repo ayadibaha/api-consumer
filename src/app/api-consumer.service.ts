@@ -13,7 +13,7 @@ const httpOptions = {
 })
 export class ApiConsumerService {
   // The root path to the API
-  private apiUrl = '';
+  private apiUrl = 'http://localhost:8080/Employee';
   constructor(private http: HttpClient) { }
   // Retourner une liste des salariés même avec doublons
   getSalaries(): Observable<Salarie[]> {
